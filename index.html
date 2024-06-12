@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Themes</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <h1>Custom Themes Example</h1>
+
+    <ul>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum modi sed eligendi velit beatae minima voluptates incidunt nisi neque nulla tenetur corrupti commodi magnam, nemo eaque iure aliquam at adipisci.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsam molestias nihil enim? Quasi vel, saepe sunt optio totam facere. Est molestiae iure blanditiis. Dolor impedit excepturi nobis labore culpa!</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <button class="theme-toggle" onclick="toggleTheme()"> Dark Mode</button>
+    <button class="theme-toggle" onclick="toggleThemeGreen()"> Green Mode</button>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.remove('dark-green');
+            document.body.classList.toggle('dark-mode');
+        }
+
+        function toggleThemeGreen() {
+            document.body.classList.remove('dark-mode');
+            document.body.classList.toggle('dark-green');
+        }
+    </script>
+</body>
+
+</html>
